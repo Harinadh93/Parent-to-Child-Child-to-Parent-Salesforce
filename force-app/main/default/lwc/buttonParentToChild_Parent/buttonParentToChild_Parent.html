@@ -1,6 +1,7 @@
 <template>
     <lightning-card title="This is the Parent Component">
-        <lightning-input type="text" label="Enter Some text" value={parentVar} onchange={handleChange}></lightning-input>
-        <c-button-parent-to-child_-child></c-button-parent-to-child_-child>
+        <lightning-input type="text" label="Enter Some text" value={parentVar} onchange={handleChange}></lightning-input><br/>
+        <lightning-button variant="brand" label="Submit" onchange={handleClick}></lightning-button>
+        <c-button-parent-to-child_-child child-var={parentVar}></c-button-parent-to-child_-child>
     </lightning-card>
 </template>
