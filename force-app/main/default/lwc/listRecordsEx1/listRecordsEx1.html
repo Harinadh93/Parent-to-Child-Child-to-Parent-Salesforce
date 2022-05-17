@@ -1,0 +1,10 @@
+<template>
+   <lightning-card>
+      <lightning-button variant="brand" label="Download Excel" title="Looks like a link" onclick={downloadExcel}></lightning-button>
+      <lightning-datatable
+         key-field="id"
+         data={stulist}
+         columns={columns}>
+      </lightning-datatable>
+   </lightning-card>
+</template>
